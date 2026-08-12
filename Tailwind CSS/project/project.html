@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Simple Tailwind page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow fixed w-full top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-teal-600">MyWebsite</h1>
+      <ul class="hidden md:flex space-x-6 font-medium">
+        <li><a href="#" class="hover:text-teal-500">Home</a></li>
+        <li><a href="#about" class="hover:text-teal-500">About</a></li>
+        <li><a href="#services" class="hover:text-teal-500">Services</a></li>
+        <li><a href="#contact" class="hover:text-teal-500">Contact</a></li>
+      </ul>
+      <button class="bg-teal-600 text-white px-4 py-2 rounded hover:bg-teal-700">
+        Login
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="h-screen flex items-center justify-center bg-gradient-to-r from-green-400 to-teal-500 text-white pt-20">
+    <div class="text-center px-6">
+      <h1 class="text-4xl md:text-5xl font-bold mb-4">
+        Welcome to our MyWebsite
+      </h1>
+      <p class="text-lg md:text-xl mb-6 max-w-xl mx-auto text-gray-100">
+        A simple, clean, and modern landing page built with Tailwind CSS.
+      </p>
+      <button class="bg-white text-teal-600 px-6 py-2 rounded hover:bg-gray-100">
+        Get Started
+      </button>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section id="about" class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4 text-gray-800">About Us</h2>
+      <p class="text-gray-600 max-w-2xl mx-auto">
+        We create simple and effective web solutions using modern tools like Tailwind CSS.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- Contact -->
+  <section id="contact" class="py-16 bg-white">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-4 text-gray-800">Contact Us</h2>
+      <p class="text-gray-600 mb-6">We’d love to hear from you.</p>
+      <button class="bg-teal-600 text-white px-6 py-2 rounded hover:bg-teal-700">
+        Send Message
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-300 py-6">
+    <div class="container mx-auto px-6 text-center">
+      <p>© 2026 MyWebsite. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
